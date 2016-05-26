@@ -110,11 +110,30 @@ set mouse=a
 
 syntax enable
 set foldmethod=syntax
-set nofoldenable
-set foldlevel=1
+"set nofoldenable
+"set foldlevel=1
+set foldlevelstart=20
 
 colorscheme molokai
 set cc=80
 
 set list
 set listchars=tab:▸\ ,eol:¬
+
+" Gif config
+"
+" Require tpope/vim-repeat to enable dot repeat support
+" Jump to anywhere with only `s{char}{target}`
+" `s<CR>` repeat last find motion.
+nmap <space> <Plug>(easymotion-s)
+" Bidirectional & within line 't' motion
+"omap t <Plug>(easymotion-bd-tl)
+" Use uppercase target labels and type as a lower case
+let g:EasyMotion_use_upper = 1
+ " type `l` and match `l`&`L`
+ let g:EasyMotion_smartcase = 1
+ " Smartsign (type `3` and match `3`&`#`)
+ let g:EasyMotion_use_smartsign_us = 1
+
+let g:syntastic_cpp_include_dirs = ['~/devtools/fltk-1.3.3/','~/devtools/']
+let g:syntastic_cpp_check_header = 1
