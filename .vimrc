@@ -137,3 +137,5 @@ let g:EasyMotion_use_upper = 1
 
 let g:syntastic_cpp_include_dirs = ['~/devtools/fltk-1.3.3/','~/devtools/']
 let g:syntastic_cpp_check_header = 1
+
+set bg=light
