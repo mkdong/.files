@@ -58,6 +58,9 @@ Plugin 'vim-scripts/sjump.vim'
 Plugin 'PProvost/vim-markdown-jekyll'
 Plugin 'vivien/vim-linux-coding-style'
 
+Plugin 'jceb/vim-orgmode'
+
+Plugin 'airblade/vim-gitgutter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -77,8 +80,11 @@ set laststatus=2
 " encoding
 set encoding=utf-8
 setglobal fileencoding=utf-8
-set fileencodings=utf-8,ucs-bom,latin1,gb18030,gbk,gb2312,cp936,iso8859
+set fileencodings=utf-8,ucs-bom,gb18030,latin1,gbk,gb2312,cp936,iso8859
 set termencoding=utf-8
+"set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+"set termencoding=utf-8
+"set encoding=utf-8
 " indent
 set wrap
 set autoindent
@@ -120,6 +126,7 @@ set cc=80
 set list
 set listchars=tab:▸\ ,eol:¬
 
+
 " Gif config
 "
 " Require tpope/vim-repeat to enable dot repeat support
@@ -135,7 +142,6 @@ let g:EasyMotion_use_upper = 1
  " Smartsign (type `3` and match `3`&`#`)
  let g:EasyMotion_use_smartsign_us = 1
 
-let g:syntastic_cpp_include_dirs = ['~/devtools/fltk-1.3.3/','~/devtools/']
+let g:syntastic_cpp_include_dirs = ['/Users/mkdong/devtools/fltk-1.3.3/', '/Users/mkdong/devtools/']
 let g:syntastic_cpp_check_header = 1
-
 set bg=light
